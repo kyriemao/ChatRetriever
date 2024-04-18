@@ -107,3 +107,6 @@ python kindred/driver/faiss_retrieval.py \
 --data_output_dir="./results/" \
 --force_emptying_dir \
 ```
+
+## Checkpoint
+Download the chatretriever-lora checkpoint [here](https://drive.google.com/file/d/17xjfI_w0CsJ5bBaeVFFv3E8RIAGOonFg/view?usp=drive_link).
