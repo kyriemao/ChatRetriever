@@ -72,7 +72,7 @@ MODEL_PATH="./checkpoints"
 
 torchrun --nproc_per_node=4 \
 --master_port 28145 \
-kindred/driver/dense_indexing.py \
+src/kindred/driver/dense_indexing.py \
 --model_name_or_path=$MODEL_PATH \
 --model_type="qwen_chat_cot_lora_eval" \
 --normalize_emb \
@@ -92,7 +92,7 @@ DATA_FOLDER="."
 
 MODEL_PATH="./checkpoints"
 
-python kindred/driver/faiss_retrieval.py \
+python src/kindred/driver/faiss_retrieval.py \
 --model_name_or_path=$MODEL_PATH \
 --model_type="qwen_chat_cot_lora_eval" \
 --embedding_size=4096 \
